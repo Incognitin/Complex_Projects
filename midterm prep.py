@@ -745,34 +745,3 @@ class Tree:
             for sublist in self._subtrees:
                 final.append(sublist.to_nested_list())
             return final
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
