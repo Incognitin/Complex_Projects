@@ -746,36 +746,6 @@ class Tree:
                 final.append(sublist.to_nested_list())
             return final
 
-'''
-def to_tree(lst):
-    """ list to tree bud
-    >>> t1 = Tree('B', [Tree('E', []), Tree('F', [])])
-    >>> t2 = Tree('C', [Tree('G', []), Tree('H', [Tree('J', [])])])
-    >>> t3 = Tree('D', [Tree('I', [])])
-    >>> hey = Tree('A', [t1, t2, t3])
-    >>> to_tree(['A', ['B', ['E'], ['F']], ['C', ['G'], ['H', ['J']]], ['D', ['I']]])
-    >>> t1 = to_tree([1, [2, [4], [5]], [3, [6], [7], [8], [9], [10]]])
-    >>> t1.to_nested_list()
-    [1, [2, [4], [5]], [3, [6], [7], [8], [9], [10]]]
-    >>> t2 = to_tree([1, [2, [4, [32, [1]]], [5]], [3, [6], [7], [8], [9], [10, [1]]]])
-    >>> t2.to_nested_list()
-    [1, [2, [4, [32, [1]]], [5]], [3, [6], [7], [8], [9], [10, [1]]]]
-    """
-    if lst == []:
-        return [Tree(None, [])]
-    elif not isinstance(lst[0], list):
-        
-    elif len(lst) == 1:
-        return [Tree(lst[0], [])]
-    else:
-        my_tree = Tree(lst[0], [])
-        for sub in lst:
-            my_tree._subtrees.append(sub.to_tree())
-        return my_tree
-'''
-
-# WEEK 9 BST
-
 
 
 
